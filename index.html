@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EcoTech Registration</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- FontAwesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Iansui+094&display=swap" rel="stylesheet">
+
+<!-- Anton Font -->
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="background"></div>
+
+<div class="glass-card">
+
+    <img src="assets/logo.png" class="logo" alt="EcoTech Logo">
+
+    <!-- Join us -->
+    <div class="join-text">Join us</div>
+
+    <form id="ecoForm">
+
+        <input class="tex" type="text" name="name" placeholder="Full Name" required>
+        <input type="text" name="year" placeholder="Year" required>
+        <input type="email" name="email" placeholder="Email" required>
+
+        <!-- Custom Select -->
+        <div class="custom-select">
+            <input type="hidden" name="department" required>
+
+            <div class="select-box">Select Department</div>
+
+            <div class="options">
+                <div data-value="Media & Design">Media & Design</div>
+                <div data-value="Environmental & Research">Environmental & Research</div>
+                <div data-value="Green Tech">Green Tech</div>
+                <div data-value="Projects & Events">Projects & Events</div>
+            </div>
+        </div>
+
+        <textarea name="description" placeholder="Suggestions" required></textarea>
+
+        <!-- check your email soon -->
+        <div class="email-note">check your email soon !!</div>
+
+        <button type="submit">
+            <span class="btn-text">Submit</span>
+            <span class="loader"></span>
+        </button>
+
+        <div class="success-message">
+            ✅ Information sent successfully!
+        </div>
+
+    </form>
+</div>
+
+<footer class="eco-footer">
+    <div class="footer-left">
+        ecotech.club2026@gmail.com
+    </div>
+
+    <div class="footer-right">
+        <a href="https://web.facebook.com/profile.php?id=61586975080067" target="_blank">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/ecotech_club/" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@ecotech.club" target="_blank">
+            <i class="fab fa-tiktok"></i>
+        </a>
+    </div>  
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

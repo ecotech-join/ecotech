@@ -201,7 +201,7 @@ button{
 
 @media (max-width: 600px) {
     .glass-card{
-        width:90%;
+        width:70%;
         padding:30px;
         border-radius:30px;
     }
@@ -212,4 +212,5 @@ button{
         flex-direction:column;
         gap:10px;
     }
+
 }

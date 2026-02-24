@@ -26,14 +26,17 @@ body{
     z-index:-1;
 }
 
-.glass-card{
-    width:380px;
-    padding: 25px;
-    border-radius:22px;
-    background:rgba(0,0,0,0.55);
-    backdrop-filter:blur(18px);
-    border:1px solid rgba(0,255,150,0.3);
-    box-shadow:0 10px 40px rgba(0,0,0,0.6);
+.glass-card {
+    width: 90%; /* flexible width */
+    max-width: 380px; /* original max size */
+    margin: 50px auto; /* center and spacing */
+    padding: 5% 5%; /* relative padding */
+    border-radius: 1.5rem; /* scalable border-radius */
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(0, 255, 150, 0.3);
+    box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease-in-out; /* smooth resizing */
 }
 
 .logo{
@@ -189,7 +192,7 @@ button{
 
 .footer-right a{
     color:white;
-    margin-left:20px;
+    margin-left:5px;
     font-size:20px;
     transition:0.3s;
 }
@@ -199,19 +202,28 @@ button{
     transform:scale(1.2);
 }
 
-@media (max-width: 600px) {
-    .glass-card{
-        width:80%;
-        padding:20px;
-        border-radius:30px;
+/* For medium devices (tablets, 768px - 1024px) */
+@media (max-width: 1024px) {
+    .glass-card {
+        max-width: 350px;
+        padding: 20px;
     }
-
-    .eco-footer{
-        height:auto;
-        padding:8px 15px;
-        flex-direction:column;
-        gap:10px;
-    }
-
 }
 
+/* For small devices (mobiles, 480px - 767px) */
+@media (max-width: 767px) {
+    .glass-card {
+        max-width: 300px;
+        padding: 15px;
+    }
+}
+
+/* For extra small devices (<480px) */
+@media (max-width: 480px) {
+    .glass-card {
+        max-width: 95%;
+        padding: 10px;
+        border-radius: 1rem;
+        font-size: 0.9rem;
+    }
+}
